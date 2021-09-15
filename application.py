@@ -14,8 +14,8 @@ def helppage():
 
 @application.route("/hello")
 def hellopage():
-    NAME_F = os.getenv('NAME_FIRST', "Stupido") # Read Environment Variable
-    NAME_L = os.getenv('NAME_LAST',  "Usero")   # Read Environment Variable
+    NAME_F = os.getenv('NAME_FIRST', "Roman") # Read Environment Variable
+    NAME_L = os.getenv('NAME_LAST',  "Gr")   # Read Environment Variable
     HELLO_MESSAGE = "Hello to: <b>" + NAME_F + " " + NAME_L + "</b> :)"
     return HELLO_MESSAGE
 
